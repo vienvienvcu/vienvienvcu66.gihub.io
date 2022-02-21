@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+body , html {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgba(226, 96, 9, 0.575);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+
+}
+.nav-links li a {
+    color: whitesmoke;
+}
+header {
+    width: 100%;
+    height: 80vh;
+    background: url(./img/banh-dau-xanh-ngay-tet.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+.header-content {
+    padding-bottom: 50px;
+     color: whitesmoke;
+     text-align: center;
+     padding-left: 30px;
+ }
+ .logo {
+     color: whitesmoke;
+ }
+ .header-content h2 {
+     font-size: 3vmin;
+     margin-top: 50px;
+     margin-bottom: 30px;
+ }
+.line {
+    width: 200px;
+    height: 3px;
+    background:  rgba(236, 135, 68, 0.877);
+    margin: 10px auto;
+}
+.header-content {
+    font-size: 4vmin;
+}
+.ctn {
+    padding: 8px 15px;
+    background: rgba(236, 135, 68, 0.877);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+#menu-bar {
+  display: none;
+}
+ label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: whitesmoke;
+    display: none;
+}
+section {
+    width: 90%;
+    margin: 40px auto;
+}
+.intainer-text {
+    margin: 40px;
+    margin-left: 70px;
+    font-size: 2.3vmin;
+    color: rgb(43, 17, 1); 
+}
+.intainer-text p {
+    color: rgb(117, 116, 116);
+}
+.intainer{
+    display: flex;
+    padding: 16px 16px;
+} 
+.item-img img {
+    width: 100%;
+    height: auto;
+}
+.item {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 15px;
+}
+.item-text {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.item-text p {
+    color: rgb(117, 116, 116);
+}
+.item-text a {
+    color: black;
+}
+.item-text a:hover{
+    color: rgba(236, 135, 68, 0.877);
+    cursor: pointer;
+}
+.item h2 {
+    margin-top: 10px;
+}
+.ctn {
+    margin-top: 20px;
+}
+
+li a:hover {
+    color: rgba(236, 135, 68, 0.877);
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    color: rgb(46, 43, 43);
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background: rgb(203, 203, 204); 
+    text-align: center;
+}
+.footer p {
+    padding: 20px;
+}
+.footer a  {
+    color: rgb(5, 10, 71);
+}
+.footer a:hover {
+    color: rgba(236, 135, 68, 0.877);
+    cursor: pointer;
+}
+img {
+    border-radius: 20px;  
+}
+.footer-icon {
+    padding: 20px 40px;
+    font-size: 40px;
+}
+
+
+/* mobile*/
+@media only screen and (max-width: 768px) {
+    .row {
+        margin: 12px;
+        } 
+    .col {
+       padding: -12px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;      
+    }
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        background: rgb(15, 97, 151);
+        text-align: center;
+        padding-top: 100px;
+        border-bottom-right-radius: 120px;
+        display: none;
+    }
+    .nav-links li {
+        margin: 60px auto;
+    }
+
+        label {
+        display: initial;
+    }
+    #menu-bar:checked ~ .nav-links {
+        display: initial;
+    } 
+    .row {
+        display: flex; /* iten se nam ngang*/
+        flex-wrap: wrap; /* cho phep xuong dong khi item vuot qua kt cua row*/
+        width: 100%;
+        justify-content: space-between;
+    }
+    .intainer-colomn {
+        width: 100%;
+    }
+    .col {
+        padding: 20px;
+    }
+    .c-0 {
+        display: none; /* tren mobile an di mot cot*/
+    }
+    .c-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .c-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .c-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .c-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .c-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .c-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .c-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .c-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .c-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .c-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .c-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .intainer-colomn {
+        width: 100%;
+    }
+    .m-0 {
+        display: none;
+    }
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .m-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .intainer-colomn .row .col .image img{
+        max-width: 100%;
+        height: auto;
+
+    }
+    .l-0 {
+        display: none;
+    }
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+    .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .l-8 {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

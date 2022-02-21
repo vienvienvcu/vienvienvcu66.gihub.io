@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+body , html {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgba(226, 96, 9, 0.575);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+
+}
+.nav-links li a {
+    color: rgb(24, 23, 23);
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    margin-left: 120px;
+}
+.header-content {
+    color: rgb(43, 17, 1);
+    text-align: center;
+}
+.line1 {
+    border: .2px solid rgb(194, 191, 191);
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 130px;
+    box-shadow: 1.5px 1.5px 8px #333;
+}
+.logo {
+    color: rgb(43, 17, 1);
+}
+.header-content h2 {
+    font-size: 16px;
+    color: rgb(141, 138, 138);
+}
+.line {
+    width: 200px;
+    height: 3px;
+    background:  rgba(236, 135, 68, 0.877);
+    margin: 10px auto;
+}
+.header-content h1 {
+    font-size: 5vmin;
+    color: #333;
+}
+.ctn {
+    padding: 8px 15px;
+    background: rgba(236, 135, 68, 0.877);
+    border-radius: 30px;
+    color: rgb(43, 17, 1);
+}
+#menu-bar {
+  display: none;
+}
+ label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: rgb(43, 17, 1);
+    display: none;
+}
+/* section */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.intainer-text h3 {
+    margin-left: 150px ;
+    margin-top: 60px;
+}
+.auth-form {
+   width: 600px;
+}
+.auth-formcontainer {
+    padding: 0 50px; 
+}
+.auth-fromheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-formheadersignup {
+    font-size: 18px;
+    font-weight: 300;
+}
+.auth-formheaherlogin{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(226, 96, 9, 0.575);
+    cursor: pointer;
+    /* cho chu doi mau chuot hinh tay lien ket */; 
+}
+.auth-frominput {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 0 12px;
+    font-size: 1.6rem;
+    border: 1px solid rgb(22, 22, 22);
+    border-radius: 10px;
+    border-color: rgb(63, 60, 60);
+}
+.auth-formtext {
+    font-size: 25px;
+    color: rgba(226, 96, 9, 0.575);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.auth-formcontrols {
+    margin-top: 50px;
+    text-align: center;
+   
+}
+.auth-formcontrols button {
+    border-radius: 10px;
+    margin: 0 30px;
+}
+.back {
+    min-width: 150px;
+    height: 40px;
+    color: rgb(61, 60, 60);
+    border-radius: 3px;
+}
+.signup {
+    min-width: 150px;
+    height: 40px;
+    color: rgb(61, 60, 60);
+    border-radius: 3px;
+    cursor: pointer;/* xuat hien con tro chuat la ban tay*/
+    outline: none;/* k xuat hien dg line xung quanh*/
+   background-color: rgba(226, 96, 9, 0.575);
+}
+.auth-formmxh {
+    margin-top: 30px;
+    text-align: center;
+ 
+}
+.auth-formfb {
+    font-size: 15PX;
+    margin: 5px;
+    color: rgba(12, 12, 12, 0.575);
+}
+.auth-formfb:hover {
+     color: rgba(236, 135, 68, 0.877);
+}
+/* section*/
+img {
+    transform: .3s ;
+ }
+ img:hover {
+     transform: scale(0.9);
+ }
+ .ctn:hover{
+     background: whitesmoke;
+     color: rgba(236, 135, 68, 0.877);
+     box-shadow: 2px 2px 5px rgb(56, 55, 55);
+ 
+ }
+ li a:hover {
+     color: rgba(236, 135, 68, 0.877);
+     cursor: pointer;
+ }
+/* mobile*/
+@media only screen and (max-width: 768px) {
+    .row {
+        margin: 12px;
+        } 
+    .col {
+       padding: -12px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;      
+    }
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        background: rgb(236, 238, 240);
+        text-align: center;
+        padding-top: 100px;
+        border-bottom-right-radius: 120px;
+        display: none;
+    }
+    .nav-links li {
+        margin: 60px auto;
+    }
+
+    label {
+        display: initial;
+    }
+    #menu-bar:checked ~ .nav-links {
+        display: initial;
+    } 
+    .row {
+        display: flex; /* iten se nam ngang*/
+        flex-wrap: wrap; /* cho phep xuong dong khi item vuot qua kt cua row*/
+        width: 100%;
+        justify-content: space-between;
+    }
+    section {
+        width: 100%;
+    }
+    .auth-form {
+        width: 100%
+     }
+    .auth-formcontrols button {
+        border-radius: 10px;
+    }
+    .auth-frominput {
+        width: 100%;
+    }
+    .intainer-text h3 {
+        text-align: center;
+        margin-right: 100px;
+    }
+   
+    .col {
+        padding: 20px;
+    }
+    .c-0 {
+        display: none; /* tren mobile an di mot cot*/
+    }
+    .c-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .c-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .c-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .c-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .c-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .c-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .c-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .c-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .c-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .c-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .c-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .intainer-colomn {
+        width: 100%;
+    }
+    .m-0 {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .m-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .l-0 {
+        display: none;
+    }
+
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+    .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .l-8 {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .header-content h1 {
+        font-size: 4vmin;
+        
+    }
+    .intainer-text h3 {
+        font-size: 3vmin;
+    }
+    .intainer-text p {
+        font-size: 2vmin;
+    }
+}

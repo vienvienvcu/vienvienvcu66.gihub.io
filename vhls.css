@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+body , html {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: rgba(226, 96, 9, 0.575);
+    text-decoration: underline;
+    font-weight: bold;
+}
+.navbar {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+.nav-links li {
+    margin: 0 30px;
+
+}
+.nav-links li a {
+    color: rgb(24, 23, 23);
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    margin-left: 120px;
+}
+.header-content {
+    color: rgb(43, 17, 1);
+    text-align: center;
+}
+.line1 {
+    border: .2px solid rgb(194, 191, 191);
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 130px;
+    box-shadow: 1.5px 1.5px 8px #333;
+}
+.logo {
+    color: rgb(43, 17, 1);
+}
+.header-content h2 {
+    font-size: 16px;
+    color: rgb(141, 138, 138);
+}
+.line {
+    width: 200px;
+    height: 3px;
+    background:  rgba(236, 135, 68, 0.877);
+    margin: 10px auto;
+}
+.header-content h1 {
+    font-size: 5vmin;
+    color: #333;
+}
+.ctn {
+    padding: 8px 15px;
+    background: rgba(236, 135, 68, 0.877);
+    border-radius: 30px;
+    color: rgb(43, 17, 1);
+}
+#menu-bar {
+  display: none;
+}
+ label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: rgb(43, 17, 1);
+    display: none;
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+/* section*/
+.intainer-text {
+    margin: 60px;
+    font-size: 2.3vmin;
+    color: rgb(43, 17, 1); 
+    margin-left: 100px;
+}
+.intainer {
+    display: flex;
+    margin-right: 20px;
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+    padding: 30px;
+    border-radius: 40px;
+}
+.text img {
+   width: 30%;
+   padding: 20px;
+   border-radius: 30px;
+   
+}
+.item-text {
+    padding-top: 60px;
+}
+.item-text h3 {
+    padding-bottom: 20px;
+}
+
+.col .text {
+    display: flex;
+    border: 1px solid rgb(224, 223, 223);
+    box-shadow: 1px 1px 8px rgb(219, 215, 215);
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+}
+.text-1 {
+    text-align: center;
+    margin-top: 30px;
+    
+}
+.text-1 a {
+    color: rgb(146, 144, 144);
+    font-weight: 400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.text-1 a:hover{
+    color: rgba(236, 135, 68, 0.877);
+    cursor: pointer;
+}
+.card {
+    margin-left: 120px;
+}
+.card h3 {
+    margin-bottom:  40px;
+    border-bottom:  0.3px solid rgb(194, 191, 191);  
+    padding: 20px; 
+}
+.row {
+    display: flex;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text .line3 {
+    border-bottom: 1px solid rgb(14, 13, 13);
+    box-shadow: 1.5px 1.5px 8px #333;
+}
+.item { 
+    display: flex;
+    border-bottom: 0.3px solid rgb(194, 191, 191);   
+}
+img {
+    transform: .3s ;
+    
+ }
+ img:hover {
+     transform: scale(0.9);
+ }
+ .ctn:hover{
+     background: whitesmoke;
+     color: rgba(236, 135, 68, 0.877);
+     box-shadow: 2px 2px 5px rgb(56, 55, 55);
+ 
+ }
+ li a:hover {
+     color: rgba(236, 135, 68, 0.877);
+     cursor: pointer;
+ }
+ .footer {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    background: rgb(203, 203, 204); 
+    text-align: center;
+}
+.footer {
+    color: rgb(46, 43, 43);
+    text-align: center;
+}
+.footer p {
+    padding: 20px;
+}
+.footer a  {
+    color: rgb(5, 10, 71);
+}
+.footer a:hover {
+    color: rgba(236, 135, 68, 0.877);
+    cursor: pointer;
+}
+img {
+    border-radius: 20px;  
+}
+.footer-icon {
+    padding: 20px 40px;
+    font-size: 40px;
+}
+/* mobile*/
+@media only screen and (max-width: 768px) {
+    .row {
+        margin: 12px;
+        } 
+    .col {
+       padding: -12px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;      
+    }
+    .nav-links {
+        width: 100%;
+        height: 100vh;
+        background: rgb(236, 238, 240);
+        text-align: center;
+        padding-top: 100px;
+        border-bottom-right-radius: 120px;
+        display: none;
+    }
+    .nav-links li {
+        margin: 60px auto;
+    }
+
+    label {
+        display: initial;
+    }
+    #menu-bar:checked ~ .nav-links {
+        display: initial;
+    } 
+    .row {
+        display: flex; /* iten se nam ngang*/
+        flex-wrap: wrap; /* cho phep xuong dong khi item vuot qua kt cua row*/
+        width: 100%;
+        justify-content: space-between;
+    }
+    .intainer-colomn {
+        width: 100%;
+    }
+    .col {
+        padding: 20px;
+    }
+    .c-0 {
+        display: none; /* tren mobile an di mot cot*/
+    }
+    .c-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .c-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .c-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .c-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .c-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .c-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .c-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .c-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .c-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .c-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .c-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .c-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .intainer-colomn {
+        width: 100%;
+    }
+    .m-0 {
+        display: none;
+    }
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .m-8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .row {
+        margin: 0;
+        } 
+    .col {
+       padding: 0;
+    }
+    .l-0 {
+        display: none;
+    }
+
+    .l-1,
+    .l-2,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,  /* tu do dung class k phai the div tich hop cu phap*/
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+    .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333;
+    }
+    .l-8 {
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.6667%;
+    }
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .header-content h1 {
+        font-size: 4vmin;
+        
+    }
+    .intainer-text h3 {
+        font-size: 3vmin;
+    }
+    .intainer-text p {
+        font-size: 2vmin;
+    }
+}
